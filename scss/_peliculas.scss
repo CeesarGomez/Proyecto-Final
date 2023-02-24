@@ -1,0 +1,17 @@
+/* PAGINA DE PELICULAS */
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  background: $primary-bg;
+  justify-content: center;
+}
+
+.degrade__pelicula {
+  background: $primary-bg;
+  margin: 2rem;
+  padding: 1.5rem;
+  border: 2px solid $color-oscuro;
+}
+
+/* FIN DE PAGINA DE PELICULAS */

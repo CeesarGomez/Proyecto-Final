@@ -1,0 +1,71 @@
+/* BOTONES */
+
+.descarga--boton,
+.cuevana--boton {
+  position: relative;
+  background: $color-claro;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 4rem 1rem 1.2rem;
+  font-weight: 700;
+  border: 0.1rem solid $color-claro;
+  border-radius: 50rem;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+.descarga--boton span {
+  position: absolute;
+  background-color: #292929;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.descarga--boton span i {
+  color: $color-claro;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.descarga--boton:hover,
+.cuevana--boton:hover {
+  color: $color-claro;
+}
+
+.descarga--boton:hover span {
+  background-color: rgba($color-oscuro, 0.6);
+}
+
+.descarga--boton:before,
+.cuevana--boton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: linear-gradient(to top, #fafafa, #191a19);
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  transition: all 0.5s;
+}
+.descarga--boton:hover:before,
+.cuevana--boton:hover:before {
+  height: 190%;
+}
+
+.cuevana--boton {
+  padding: 1rem 4rem;
+}
+
+.cuevana--boton:before {
+  background: $primary-bg;
+}
+
+/* fin de botones */

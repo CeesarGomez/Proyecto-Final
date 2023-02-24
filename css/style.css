@@ -1,0 +1,287 @@
+/* GENERALES */
+body {
+  padding-top: 4.2rem;
+}
+
+.fuente,
+.frase,
+.titulo__galeria {
+  font-family: "Harry Potter", sans-serif;
+}
+
+.fuente {
+  font-size: 1.5rem;
+}
+
+.iconos {
+  font-size: 2rem;
+}
+
+.fotos {
+  vertical-align: middle;
+}
+
+/* BOTONES */
+.descarga--boton,
+.cuevana--boton {
+  position: relative;
+  background: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 4rem 1rem 1.2rem;
+  font-weight: 700;
+  border: 0.1rem solid white;
+  border-radius: 50rem;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+.descarga--boton span {
+  position: absolute;
+  background-color: #292929;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.descarga--boton span i {
+  color: white;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.descarga--boton:hover,
+.cuevana--boton:hover {
+  color: white;
+}
+
+.descarga--boton:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.descarga--boton:before,
+.cuevana--boton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: linear-gradient(to top, #fafafa, #191a19);
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  transition: all 0.5s;
+}
+
+.descarga--boton:hover:before,
+.cuevana--boton:hover:before {
+  height: 190%;
+}
+
+.cuevana--boton {
+  padding: 1rem 4rem;
+}
+
+.cuevana--boton:before {
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+}
+
+/* fin de botones */
+/* PAGINA DE INICIO */
+.frase {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 200px;
+}
+
+.fondo--copy {
+  background-color: rgb(49, 49, 49);
+  height: 100%;
+}
+
+.parrafo__explicacion {
+  padding: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .frase {
+    font-size: 1.8rem;
+    font-weight: 200px;
+  }
+  .parrafo__explicacion {
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+}
+.cuentas__twitter {
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+  padding: 2rem;
+}
+.cuentas__twitter .carta__twittter {
+  gap: 2rem;
+}
+
+/* PAGINA DE PELICULAS */
+.grid {
+  display: grid;
+  gap: 2rem;
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+  justify-content: center;
+}
+
+.degrade__pelicula {
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+  margin: 2rem;
+  padding: 1.5rem;
+  border: 2px solid black;
+}
+
+/* FIN DE PAGINA DE PELICULAS */
+/* PAGINA DE GALERIA */
+.titulo__galeria {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .titulo__galeria {
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+  }
+}
+.caja__descarga {
+  padding: 2.5em 0rem;
+}
+
+.casas__contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+.casas__contenedor .casa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 990px) {
+  .casas__mq {
+    max-width: 920px;
+  }
+}
+/* Aviso Legal */
+.avisolegal {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  padding: 5rem 0;
+}
+.avisolegal .avisolegal__imagen {
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .avisolegal {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .avisolegal__imagen {
+    grid-column: 2/3;
+  }
+}
+/* FIN DE AVISO LEGAL */
+/* CONTACTO */
+.contacto__padding {
+  padding: 2rem;
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+}
+
+.formulario {
+  background-color: grey;
+  width: min(50rem, 100%);
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.campo textarea {
+  height: 6rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.w-sm-90 {
+  width: 100%;
+}
+
+.boton {
+  background-color: rgb(55, 50, 128);
+  color: white;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.boton:hover {
+  background: linear-gradient(to top, rgb(33, 37, 94), rgb(75, 75, 77));
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    width: 80%;
+    padding: 1rem;
+  }
+  .input-text {
+    padding: 0.6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

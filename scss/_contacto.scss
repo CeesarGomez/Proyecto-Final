@@ -1,0 +1,77 @@
+/* CONTACTO */
+
+.contacto__padding {
+  padding: 2rem;
+  background: $primary-bg;
+}
+
+.formulario {
+  background-color: grey;
+  width: min(50rem, 100%);
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.campo textarea {
+  height: 6rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.w-sm-90 {
+  width: 100%;
+}
+
+.boton {
+  background-color: $primary-color;
+  color: $color-claro;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background: $primary-bg;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    width: 80%;
+    padding: 1rem;
+  }
+  .input-text {
+    padding: 0.6rem;
+  }
+}
